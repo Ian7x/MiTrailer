@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #242323;
+  color: #fff;
+}
+h1 {
+  font-size: 35px;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.center-max-size {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  padding: 15px;
+  /* background-color: #242323; */
+  background-color: #ff000070;
+  letter-spacing: 2px;
+}
+.center-header {
+  max-width: 1040px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.poster {
+  background-size: cover;
+  background-position: top center;
+  min-height: 540px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.poster-content {
+  width: 80%;
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.button {
+  background: rgb(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  text-transform: uppercase;
+  border: 1px solid gray;
+}
+.play-video {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  right: 50%;
+  padding: 10px 10px;
+}
+
+.button:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.close-video {
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  right: 50%;
+  padding: 1px 10px;
+}
+
+.youtube-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.youtube {
+  width: 100%;
+}
+
+.brand {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  padding: 2px 20px;
+  font-weight: 600;
+}
+
+/*-- MOVIE */
+
+.movie {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+
+.movie img {
+  height: 400px;
+  max-width: 100%;
+}
+
+.movie-infos {
+  padding: 15px 0;
+}
+
+.movie-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.movie-voting {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background-color: #242323;
+  border: 1px solid greenyellow;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: greenyellow;
+}
+
+/** SEARCH **/
+.form {
+  position: relative;
+}
+
+.search {
+  outline: transparent;
+  padding: 0 10px;
+  border-radius: 25px;
+}
+
+.submit-search {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.search::placeholder {
+  color: rgb(171, 171, 171);
+}
+/*Chips for genres.*/
+.chip {
+  background-color: #ff000096;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/*Footer*/
+.footer {
+  text-align: center;
+  background-color: #ff000070;
+  padding: 15px;
+}
+.footer h1 {
+  font-size: 16px;
+}
+
+.singleCol {
+  max-width: 750px;
+  margin: 10px auto;
+}
+.social-media-icons-white a {
+  color: #fff;
+  padding: 15px;
+  font-size: 24px;
+}
+/*Error page*/
+.error {
+  height: 1600px;
+  width: 100%;
+  margin: 200px auto;
+  text-align: center;
+  align-items: center;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  /* body {
+    background-color: red;
+  } */
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .movie-voting {
+    position: absolute;
+    right: 40%;
+    top: 5px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* body {
+    background-color: yellow;
+  } */
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .movie-voting {
+    position: absolute;
+    right: 28%;
+    top: 5px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* body {
+    background-color: blue;
+  } */
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movie-voting {
+    position: absolute;
+    right: 11%;
+    top: 5px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* body {
+    background-color: green;
+  } */
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
