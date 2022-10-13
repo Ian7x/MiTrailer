@@ -2,8 +2,8 @@
 
 Great app for movie trailers with description.
 Movie searching web app built with React JS.
-Used libraries and technologies 
-Material UI, Axios,React Bootstrap 
+Used libraries and technologies -
+Material UI, Axios,React Bootstrap .
 The application gets the movies from TMDB API
 
 In the project directory my-app, you can run
